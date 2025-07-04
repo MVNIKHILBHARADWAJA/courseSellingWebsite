@@ -2,6 +2,11 @@
   text-align: center;
   padding: 3rem;
   background-color: #f5f5f5;
+  max-width: 600px;
+  width: 90%;
+  margin: 3rem auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .placeholder-page h1 {
@@ -12,4 +17,36 @@
 .placeholder-page p {
   font-size: 1.1rem;
   color: #555;
+}
+
+/* 📱 Tablet */
+@media (max-width: 768px) {
+  .placeholder-page {
+    padding: 2rem;
+  }
+
+  .placeholder-page h1 {
+    font-size: 1.6rem;
+  }
+
+  .placeholder-page p {
+    font-size: 1rem;
+  }
+}
+
+/* 📱 Mobile */
+@media (max-width: 480px) {
+  .placeholder-page {
+    padding: 1.5rem;
+    margin: 2rem 1rem;
+    border-radius: 8px;
+  }
+
+  .placeholder-page h1 {
+    font-size: 1.4rem;
+  }
+
+  .placeholder-page p {
+    font-size: 0.95rem;
+  }
 }

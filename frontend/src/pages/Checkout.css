@@ -1,32 +1,42 @@
 .checkout-page {
   max-width: 500px;
+  width: 90%;
   margin: 2rem auto;
   padding: 2rem;
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .checkout-page h2 {
   margin-bottom: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .checkout-page p {
   margin: 0.5rem 0;
+  font-size: 1rem;
 }
 
 .coupon-section {
-  margin: 1rem 0;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .coupon-section input {
-  padding: 0.5rem;
-  width: 60%;
-  margin-right: 0.5rem;
+  flex: 1 1 60%;
+  padding: 0.6rem;
+  font-size: 1rem;
+  min-width: 150px;
 }
 
 .coupon-section button {
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .discount {
@@ -41,9 +51,62 @@
   color: #fff;
   border: none;
   border-radius: 6px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
 .pay-button:hover {
   background-color: #0056b3;
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .checkout-page {
+    padding: 1.5rem;
+  }
+
+  .checkout-page h2 {
+    font-size: 1.3rem;
+  }
+
+  .coupon-section input,
+  .coupon-section button {
+    font-size: 0.95rem;
+    padding: 0.5rem;
+  }
+
+  .pay-button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-page {
+    margin: 1.5rem 1rem;
+    padding: 1rem;
+  }
+
+  .checkout-page h2 {
+    font-size: 1.2rem;
+  }
+
+  .checkout-page p {
+    font-size: 0.9rem;
+  }
+
+  .coupon-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .coupon-section input,
+  .coupon-section button {
+    width: 100%;
+    margin: 0;
+  }
+
+  .pay-button {
+    padding: 0.65rem;
+    font-size: 0.95rem;
+  }
 }
