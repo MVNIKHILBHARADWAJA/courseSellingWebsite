@@ -1,5 +1,5 @@
 import React from 'react';
-import userData from '../data/userData.js';
+import userData from '../data/UserData.js';
 import './DashboardContent.css';
 import { Link } from 'react-router-dom';
 
