@@ -1,0 +1,49 @@
+.checkout-page {
+  max-width: 500px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.checkout-page h2 {
+  margin-bottom: 1rem;
+}
+
+.checkout-page p {
+  margin: 0.5rem 0;
+}
+
+.coupon-section {
+  margin: 1rem 0;
+}
+
+.coupon-section input {
+  padding: 0.5rem;
+  width: 60%;
+  margin-right: 0.5rem;
+}
+
+.coupon-section button {
+  padding: 0.5rem 1rem;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+}
+
+.pay-button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.pay-button:hover {
+  background-color: #0056b3;
+}

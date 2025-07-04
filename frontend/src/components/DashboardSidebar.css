@@ -1,0 +1,25 @@
+.dashboard-sidebar {
+  width: 220px;
+  background-color: #ffffff;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.dashboard-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dashboard-sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  transition: background-color 0.2s;
+}
+
+.dashboard-sidebar li.active,
+.dashboard-sidebar li:hover {
+  background-color: #007bff;
+  color: #fff;
+}
